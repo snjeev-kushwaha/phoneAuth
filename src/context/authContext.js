@@ -1,12 +1,6 @@
-import { createContext, useEffect, useState } from "react";
-import {
-  RecaptchaVerifier,
-  signInWithPhoneNumber,
-  onAuthStateChanged,
-  signOut,
-} from "firebase/auth";
+import { createContext, useEffect, useState } from "react"
+import {RecaptchaVerifier, signInWithPhoneNumber, onAuthStateChanged, signOut} from 'firebase/auth'
 import { auth } from "../firebaseConfig";
-import { async } from "@firebase/util";
 export const phoneAuthContext = createContext();
 
 const AuthProvider = ({ children }) => {

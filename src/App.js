@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import AuthProvider from "./context/authContext";
 import Home from "./Home";
@@ -10,7 +9,7 @@ function App() {
       <AuthProvider>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="sign" element={<Signin />} />
+          <Route path="/sign" element={<Signin />} />
         </Routes>
       </AuthProvider>
     </div>

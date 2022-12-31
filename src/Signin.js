@@ -8,6 +8,8 @@ function Signin() {
   const [otp, setOtp] = useState("");
   const [flag, setFlag] = useState(false);
 
+  console.log(captcha, "phone auth");
+  
   const navigate = useNavigate();
 
   const getOTP = async (event) => {
